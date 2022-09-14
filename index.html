@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/5209b880a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container" >
+        <div class="text-bg-primary  p-4 text-center" ><h1>Todo App</h1></div>
+        <div class="add-container">
+            <div class="additem">
+                <div class="input-group mb-3 p-2">
+                    <input type="text" class="form-control" placeholder="ایجاد محصول جدید" aria-label="Example text with button addon" aria-describedby="button-addon1" id="input">
+                </div>
+                <div class="d-flex justify-content-space-around item-btn ">
+                    <button class="btn  btn-outline-secondary text-bg-primary  border-0 pr-2 d-flex" type="button"  onclick="addtodo()">ایجاد محصول  </button>
+                    
+                    <button class="btn  btn-outline-secondary text-bg-light  border-0 p-2 d-flex " type="button" id="remaindtodo" >  </button>
+                </div>
+            </div>
+        </div>
+
+        
+
+<!-- table -->
+<div class="tabels">
+    <table class="table  mt-5  table-w">
+        <thead class="table-dark">
+          <tr >
+            <th scope="col"> کد فروش  </th>
+            <th scope="col">نام کالا </th>
+            <th scope="col ">وضعیت خرید</th>
+            <th scope="col">حدف  کالا </th>
+            <th scope="col"> <input type="text" class="form-control" placeholder="محصول مورد نظر را جستجو کن " aria-label="Example text with button addon" aria-describedby="button-addon1" id="inputSerch">
+            </th>
+            <th scope="col"><button class="btn  btn-outline-secondary text-bg-light  border-0 p-2 d-flex" type="button" onclick="cleardb()" >حذف تمام کالاها      </button>
+            </th>
+
+         
+               
+          </tr>
+        </thead>
+        <tbody id="todolistcontant">
+          
+        </tbody>
+      </table>
+
+<!-- table 2 -->
+<table class="table table-success table-w">
+<thead  class="table-dark">
+  <tr>
+    <th scope="col">کد فروش  </th>
+    <th scope="col">نام کالا </th>
+    <th scope="col">وضعیت خرید</th>
+    <!-- <th scope="col">حدف  کالا </th> -->
+  </tr>
+</thead >
+<tbody id="todoDonecontant">
+  
+</tbody>
+</table>
+
+
+<!-- table 3 -->
+<table class="table table-danger table-w">
+<thead  class="table-dark">
+  <tr>
+    <th scope="col">کد فروش  </th>
+    <th scope="col">نام کالا </th>
+    <th scope="col">وضعیت خرید</th>
+    <!-- <th scope="col">حدف  کالا </th> -->
+  </tr>
+</thead>
+<tbody id="todoNotDonecontant">
+  
+</tbody>
+</table>
+</div>
+
+        
+
+       <!-- <div class="items">
+        <h3  class="m-30">اضافه کردن آیتم </h3>
+        <div id="todolistcontant" class="">
+            
+      
+        </div>
+        
+        <h3>آیتم های موجود</h3>
+        <div id="todoDonecontant" >
+        
+        </div> -->
+        <!-- <h3 >آیتم های نا موجود</h3>
+        <div id="todoNotDonecontant" >
+        </div> -->
+        
+
+
+    
+    
+
+
+
+ 
+    <script src="/index.js">
+
+    </script>
+
+    
+    <!-- <script src="/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>

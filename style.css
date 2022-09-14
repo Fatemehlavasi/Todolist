@@ -1,0 +1,44 @@
+.additem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 200px;
+    width: 50%;
+    margin-top: 15px;
+    box-shadow: 10px 10px 33px 1px #888888;
+    flex-direction: column;
+    
+    
+    
+}
+.add-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background-color: aqua; */ 
+    
+}
+.items{
+    margin-top: 50px;
+} 
+ .item-btn{
+    width: 100%;
+     /* background-color: blue;  */
+    justify-content: space-around;
+} 
+.table-w{
+
+    width: 100%;
+    
+}
+.tabels{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
